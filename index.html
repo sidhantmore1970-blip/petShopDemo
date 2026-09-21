@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Little Ark Pet Supply</title>
+<meta name="description" content="Food, toys, grooming and honest advice for dogs, cats, fish, birds and small pets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- product glyphs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="g-bag" viewBox="0 0 64 64">
+    <path d="M16 20h32l5 34a5 5 0 0 1-5 6H16a5 5 0 0 1-5-6z" fill="currentColor"/>
+    <rect x="16" y="9" width="32" height="10" rx="3" fill="currentColor"/>
+    <circle cx="32" cy="40" r="11" style="fill:var(--tint)"/>
+    <path d="M32 47c-6-4-8-7-8-10a4.5 4.5 0 0 1 8-2 4.5 4.5 0 0 1 8 2c0 3-2 6-8 10z" fill="currentColor"/>
+  </symbol>
+  <symbol id="g-rope" viewBox="0 0 64 64">
+    <path d="M16 48L48 16" stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M16 48L48 16" stroke-width="9" fill="none" stroke-dasharray="2.5 6.5" style="stroke:var(--tint)"/>
+    <circle cx="13" cy="51" r="7" fill="currentColor"/>
+    <circle cx="51" cy="13" r="7" fill="currentColor"/>
+  </symbol>
+  <symbol id="g-brush" viewBox="0 0 64 64">
+    <rect x="10" y="10" width="44" height="26" rx="8" fill="currentColor"/>
+    <path d="M28 34h8l1 20a5 5 0 0 1-10 0z" fill="currentColor"/>
+    <g style="fill:var(--tint)">
+      <circle cx="20" cy="19" r="2.2"/><circle cx="28" cy="19" r="2.2"/><circle cx="36" cy="19" r="2.2"/><circle cx="44" cy="19" r="2.2"/>
+      <circle cx="20" cy="27" r="2.2"/><circle cx="28" cy="27" r="2.2"/><circle cx="36" cy="27" r="2.2"/><circle cx="44" cy="27" r="2.2"/>
+    </g>
+  </symbol>
+  <symbol id="g-can" viewBox="0 0 64 64">
+    <rect x="14" y="14" width="36" height="42" rx="6" fill="currentColor"/>
+    <rect x="14" y="26" width="36" height="18" style="fill:var(--tint)"/>
+    <path d="M24 35c3-4 7-4 10 0-3 4-7 4-10 0zM34 35l6-4v8z" fill="currentColor"/>
+    <rect x="18" y="9" width="28" height="6" rx="3" fill="currentColor"/>
+  </symbol>
+  <symbol id="g-wand" viewBox="0 0 64 64">
+    <path d="M12 54L38 28" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M40 26c-2-10 4-18 14-20 2 10-2 18-14 20z" fill="currentColor"/>
+    <path d="M40 26c-10 2-18-4-20-14 10-2 18 2 20 14z" style="fill:var(--tint)"/>
+  </symbol>
+  <symbol id="g-tub" viewBox="0 0 64 64">
+    <rect x="14" y="22" width="36" height="36" rx="7" fill="currentColor"/>
+    <rect x="11" y="12" width="42" height="12" rx="5" fill="currentColor"/>
+    <path d="M22 40c4-6 10-6 14 0-4 6-10 6-14 0zM35 40l7-5v10z" style="fill:var(--tint)"/>
+  </symbol>
+  <symbol id="g-seed" viewBox="0 0 64 64">
+    <path d="M24 10h16l-3 10c10 5 14 14 14 24 0 9-8 14-19 14S13 53 13 44c0-10 4-19 14-24z" fill="currentColor"/>
+    <rect x="22" y="17" width="20" height="5" rx="2.5" style="fill:var(--tone)"/>
+    <ellipse cx="26" cy="40" rx="3.2" ry="5.5" transform="rotate(-30 26 40)" style="fill:var(--tint)"/>
+    <ellipse cx="38" cy="37" rx="3.2" ry="5.5" transform="rotate(25 38 37)" style="fill:var(--tint)"/>
+    <ellipse cx="33" cy="49" rx="3.2" ry="5.5" transform="rotate(75 33 49)" style="fill:var(--tint)"/>
+  </symbol>
+  <symbol id="g-hay" viewBox="0 0 64 64">
+    <path d="M12 26h40l-3 26a6 6 0 0 1-6 5H21a6 6 0 0 1-6-5z" fill="currentColor"/>
+    <path d="M16 26l-5-10M24 26l-3-13M32 26V11M40 26l3-13M48 26l5-10" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <rect x="13" y="34" width="38" height="5" style="fill:var(--tint)"/>
+    <rect x="14" y="46" width="36" height="4" style="fill:var(--tint)"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="logo" href="#top" aria-label="Little Ark Pet Supply, home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="11" y="7" width="18" height="13" rx="3" fill="#FFC533"/>
+        <circle cx="20" cy="13.5" r="3" fill="#1B2A41"/>
+        <path d="M3 21h34l-5 13a3 3 0 0 1-2.8 2H10.8A3 3 0 0 1 8 34z" fill="currentColor"/>
+        <circle cx="14" cy="28" r="2" fill="#FF9EBB"/><circle cx="20" cy="28" r="2" fill="#58B6E8"/><circle cx="26" cy="28" r="2" fill="#5DBB8A"/>
+      </svg>
+      <span>Little Ark</span>
+    </a>
+    <div class="head-right">
+      <nav class="nav-links" aria-label="Main">
+        <a href="#pets">Shop by pet</a>
+        <a href="#shelf">Popular</a>
+        <a href="#services">Services</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="btn btn-primary basket-btn" id="basket-btn" type="button" aria-haspopup="dialog" aria-label="Open basket, 0 items">
+        Basket <span class="count" id="basket-count" aria-hidden="true">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top"></div>
+
+  <!-- HERO -->
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Everything for the animals in your house.</h1>
+        <p>Food, toys and grooming for dogs, cats, fish, birds and small pets. Ask us anything, and we'll tell you if you don't need it.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#pets">Shop by pet</a>
+          <a class="btn btn-ghost" href="#book">Book grooming</a>
+        </div>
+      </div>
+      <div class="stage" id="stage">
+        <svg id="hero-faces" viewBox="0 0 640 520" role="img" aria-label="A parade of friendly animal faces: a dog, cat, rabbit, parrot and fish, whose eyes follow your cursor."></svg>
+      </div>
+    </section>
+  </div>
+
+  <!-- SHOP BY PET -->
+  <section class="section" id="pets" aria-labelledby="pets-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="pets-title">Who are you shopping for?</h2>
+        </div>
+      </div>
+      <div class="mosaic">
+        <a class="tile t-dogs" href="#shelf" data-filter="dogs" style="--tone:#FFC533;--tint:#FFF0C2">
+          <span class="face" data-face="dogs" aria-hidden="true"></span>
+          <h3>Dogs</h3>
+          <p>Food, chews, leads and brushes. Puppy to senior.</p>
+          <span class="pill">Shop dogs</span>
+        </a>
+        <a class="tile t-cats" href="#shelf" data-filter="cats" style="--tone:#FF9EBB;--tint:#FFDDE7">
+          <span class="face" data-face="cats" aria-hidden="true"></span>
+          <h3>Cats</h3>
+          <p>Wet food, scratchers and things to chase.</p>
+          <span class="pill">Shop cats</span>
+        </a>
+        <a class="tile t-fish" href="#shelf" data-filter="fish" style="--tone:#58B6E8;--tint:#D3EDFA">
+          <span class="face" data-face="fish" aria-hidden="true"></span>
+          <h3>Fish</h3>
+          <p>Flakes, filters and tank basics.</p>
+          <span class="pill">Shop fish</span>
+        </a>
+        <a class="tile t-birds" href="#shelf" data-filter="birds" style="--tone:#5DBB8A;--tint:#D2EFDF">
+          <span class="face" data-face="birds" aria-hidden="true"></span>
+          <h3>Birds</h3>
+          <p>Seed, perches and cage fittings.</p>
+          <span class="pill">Shop birds</span>
+        </a>
+        <a class="tile t-small" href="#shelf" data-filter="small" style="--tone:#B9A6FF;--tint:#E6DFFF">
+          <span class="face" data-face="small" aria-hidden="true"></span>
+          <h3>Small pets</h3>
+          <p>Hay, bedding and treats for rabbits, hamsters and guinea pigs.</p>
+          <span class="pill">Shop small pets</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHELF -->
+  <section class="section" id="shelf" aria-labelledby="shelf-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="shelf-title">Popular this week</h2>
+          <p>What people are taking home right now.</p>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Filter products by pet">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="dogs" aria-pressed="false">Dogs</button>
+          <button class="chip" type="button" data-filter="cats" aria-pressed="false">Cats</button>
+          <button class="chip" type="button" data-filter="fish" aria-pressed="false">Fish</button>
+          <button class="chip" type="button" data-filter="birds" aria-pressed="false">Birds</button>
+          <button class="chip" type="button" data-filter="small" aria-pressed="false">Small pets</button>
+        </div>
+      </div>
+      <p class="shelf-count" id="shelf-count" aria-live="polite"></p>
+      <div class="shelf" id="shelf-grid"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" aria-labelledby="services-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2 id="services-title">More than a shop</h2></div>
+      </div>
+      <div class="services">
+        <div>
+          <div class="svc">
+            <h3>Grooming</h3>
+            <p>Bath, blow-dry, brush and nail trim for dogs and cats. Most visits take about 90 minutes. From ₹600.</p>
+          </div>
+          <div class="svc">
+            <h3>Food advice</h3>
+            <p>Not sure what to feed? Bring the ingredients list and we'll go through it together. It's free, and there's no pressure to buy.</p>
+          </div>
+          <div class="svc">
+            <h3>Home delivery</h3>
+            <p>Free within 10 km on orders over ₹999. Order before 4 pm and it usually arrives the same day.</p>
+          </div>
+        </div>
+
+        <div class="book" id="book">
+          <div class="book-form" id="book-form-wrap">
+            <h3>Book a grooming slot</h3>
+            <p class="lede">Pick a day and we'll call to confirm.</p>
+            <form id="book-form" novalidate>
+              <div class="fields">
+                <div class="field full">
+                  <label for="f-name">Your name</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field full">
+                  <label for="f-phone">Phone number</label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                </div>
+                <div class="field">
+                  <label for="f-pet">Pet</label>
+                  <select id="f-pet" name="pet">
+                    <option>Dog</option>
+                    <option>Cat</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-time">Time</label>
+                  <select id="f-time" name="time">
+                    <option value="morning (9 to 12)">Morning, 9 to 12</option>
+                    <option value="afternoon (12 to 4)">Afternoon, 12 to 4</option>
+                    <option value="evening (4 to 8)">Evening, 4 to 8</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="f-date">Day</label>
+                  <input id="f-date" name="date" type="date" required>
+                </div>
+              </div>
+              <p class="status" id="form-status" role="alert"></p>
+              <button class="btn" type="submit">Request slot</button>
+            </form>
+          </div>
+          <div class="book-done" id="book-done" hidden>
+            <h3>Slot requested</h3>
+            <p id="book-done-text"></p>
+            <button class="btn" type="button" id="book-again">Request another slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="visit">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Little Ark Pet Supply</h2>
+        <p>Food, toys and advice for every animal in your house.</p>
+      </div>
+      <div>
+        <h3>Find us</h3>
+        <p>Shop 4, Garden Road<br>Your Town 000000</p>
+        <p>+91 00000 00000<br>hello@example.com</p>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <dl>
+          <dt>Every day</dt><dd>9 am to 9 pm</dd>
+          <dt>Vet on site</dt><dd>Saturdays, 11 am to 2 pm</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="legal">© 2026 Little Ark Pet Supply. Demo website: products, prices and contact details are placeholders.</p>
+  </div>
+</footer>
+
+<!-- BASKET -->
+<dialog id="basket" aria-labelledby="basket-title">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="basket-title">Your basket</h2>
+      <button class="close" id="basket-close" type="button" aria-label="Close basket">×</button>
+    </div>
+    <ul class="lines" id="basket-lines"></ul>
+    <p class="empty" id="basket-empty">Your basket is empty. Add something from the shelf.</p>
+    <div class="sheet-foot">
+      <div class="total"><span>Total</span><strong id="basket-total">₹0</strong></div>
+      <p class="ship" id="basket-ship"></p>
+      <button class="btn btn-primary" id="checkout" type="button" disabled>Place order</button>
+      <p class="status" id="checkout-status" role="status"></p>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
